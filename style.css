@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --red:#ff3838; 
+}
+*{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--red);
+    color: #fff;
+} 
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body{
+    background: #f7f7f7;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0px 4px 6px -4px rgba(0, 0, 0, 0.5);
+}
+
+.logo{
+    font-size: 2rem;
+    color: #666;
+    background-color: transparent;
+
+}
+
+.logo-icon{
+    font-size: 0.5rem;
+    margin-left:17px;
+    background-image: url(pine\ cafe\ logo.png);
+    background-size:contain;
+    height: 50px;
+    width: 48px;
+
+}
+
+header .navbar a{
+    font-size: 2rem;
+    margin-left: 2rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: #CF8A51;
+}
+
+#menu-bar{
+    font-size: 2rem;
+    cursor: pointer;
+    color: #666;
+    border: 1px solid #666; 
+    padding: .2rem 1rem;
+    display:none;
+}
+
+#menu-bar:hover{
+    color: #CF8A51;
+    border-color: #CF8A51;
+}
+
+.home{
+    /* width: 1100px;
+    height: 600px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem ;
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home .content{
+    display: block;
+    
+    width: 400px;
+    
+}
+.home .content h3{
+    font-size: 4rem;
+    font-weight: 500;
+}
+.home .content p{
+    font-size: 2rem;
+    padding-bottom: 15px;
+    
+}
+
+.btn{
+    width: 100px;
+    height: 35px;
+    
+    
+    display: inline-block;
+    
+    z-index: 0;
+    border: 2px solid #121111 ;
+    border-radius: 0.5rem;
+
+}
+.order{
+    font-size: 15px;
+    font-weight: 800;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 6px;
+    color: #e0ac78;
+}
+
+.order:hover{
+   
+    color: #fbfaf9;
+    background-color: #e0ac78;
+    
+}
+
+
+
+.image {
+    margin-top: 80px;
+    width: 500px;
+    height: 500px;
+    background-color: #ff3838;
+    align-self: auto;
+    background-image: url(images/homepageburger.jpg);
+    background-size:cover;
+    animation:float 3s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querires */
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+       
+    }
+    header{
+        padding: 2rem ;
+    }
+}
+@media(max-width:768px){
+    #menu-bar{
+        display:initial;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        background: #f7f7f7;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0,100% 0, 100% 0, 0 0);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        display: block;
+        border: .2rem solid rgba(0,0,0,.1);
+        border-left: .5rem solid #CF8A51;
+    }
+}
+
+@media(max-width:400px){
+
+    html{
+        font-size: 50%;
+       
+    }
+    
+}
+
