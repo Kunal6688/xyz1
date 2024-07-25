@@ -152,14 +152,14 @@ header .navbar a:hover{
 
 
 .image {
-    margin-top: 80px;
+    margin-top: 90px;
     width: 500px;
     height: 500px;
     background-color: #ff3838;
     align-self: auto;
     background-image: url(images/homepageburger.jpg);
     background-size:cover;
-    animation:float 3s linear infinite;
+    animation:float 4s linear infinite;
 }
 
 
